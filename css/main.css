@@ -7,7 +7,14 @@
 :root {
     --primary-color: rgb(70, 70, 70);
     --secondary-color: rgb(54, 54, 54);
+    --accent-color: rgb(54, 54, 54);
+}
+
+.normal-accent {
+    --primary-color: rgb(70, 70, 70);
+    --secondary-color: rgb(54, 54, 54);
     --accent-color: rgb(138, 43, 226);
+    
 }
 
 .red-accent {
