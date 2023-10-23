@@ -3,11 +3,13 @@ const navelement = document.getElementById("navbarr2rs")
 var navbar = `
 <nav>
     <ul class="navcontainer">
-        <li><button class="navbutton">Home</button></li>
-        <li><button class="navbutton">Games</button></li>
-        <li><button class="navbutton">Apps</button></li>
-        <li><button class="navbutton">Socials</button></li>
-        <li><button class="navbutton">Options</button></li>
+    <img src="imgs/favicon.png" style=" width:50px; height: 50px;">
+        <h1 class="name">Plasm</h1>
+        <li class="navlist" style="height: 15%;"><a href="index.html"><button class="navbutton">Home</button></a></li>
+        <li class="navlist" style="height: 15%;"><a href="games.html"><button class="navbutton">Games</button></a></li>
+        <li class="navlist" style="height: 15%;"><button class="navbutton">Apps</button></li>
+        <li class="navlist" style="height: 15%;"><button class="navbutton">Socials</button></li>
+        <li class="navlist" style="height: 15%;"><a href="settings.html"><button class="navbutton">Options</button></a></li>
     </ul>
 </nav>
 `

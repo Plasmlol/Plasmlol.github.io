@@ -1,9 +1,153 @@
-* {
+@font-face {
+    font-family: Lemonmilk;
+    src: url(LEMONMILK.otf);
+}
+
+
+:root {
+    --primary-color: rgb(70, 70, 70);
+    --secondary-color: rgb(54, 54, 54);
+    --accent-color: rgb(138, 43, 226);
+}
+
+.red-accent {
+    --primary-color: rgb(70, 70, 70);
+    --secondary-color: rgb(54, 54, 54);
+    --accent-color: rgb(255, 0, 0);
+}
+
+.blue-accent {
+    --primary-color: rgb(70, 70, 70);
+    --secondary-color: rgb(54, 54, 54);
+    --accent-color: rgb(38, 0, 255);
+}
+
+body {
     background-color: rgb(70, 70, 70);
 }
 
+
+
 .navcontainer {
     display: flex;
-    list-style: none;
     gap: 1rem;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-wrap:wrap;
+    background-color: rgb(54, 54, 54);
 }
+
+
+.navcontainer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.navcontainer li{
+    position: relative;
+    top: 20px;
+    padding: 0;
+    margin-right: -6;
+
+}
+
+.navcontainer h1{
+    position: relative;
+    top: 0px;
+    font-family: Lemonmilk;
+    color: var(--accent-color);
+
+    
+}
+
+.navcontainer img{
+    position: relative;
+    top: 13px;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.navbutton {
+    border-radius: 0.25rem;
+    background:transparent;
+    text-align: center;
+    font-family: Lemonmilk;
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.navbutton:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.navlist {
+    padding: 0;
+    margin: 0;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+}
+
+.box {
+    font-family: Lemonmilk;
+    background: rgb(70, 70, 70);
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 250px;
+    width: 250px;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow:hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+ }
+
+ .box:hover {
+    box-shadow: var(--accent-color) 0px 0.35em 1.175em, var(--accent-color) 0px 0.175em 0.5em;
+    transform: scale(1.1);
+    z-index: 1;
+ }
