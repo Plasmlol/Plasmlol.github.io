@@ -10,6 +10,7 @@ var navbar = `
         <li class="navlist" style="height: 15%;"><button class="navbutton">Apps</button></li>
         <li class="navlist" style="height: 15%;"><button class="navbutton">Socials</button></li>
         <li class="navlist" style="height: 15%;"><a href="settings.html"><button class="navbutton">Options</button></a></li>
+        <li class="navlist" style="height: 15%;"><a href="updates.html"><button class="navbutton">Updates</button></a></li>
     </ul>
 </nav>
 `
