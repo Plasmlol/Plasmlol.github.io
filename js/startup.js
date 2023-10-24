@@ -11,7 +11,6 @@ window.onload = function() {
         document.body.classList.replace("root", theme)
     } else {
         document.body.classList.replace("root", "normal-accent")
-        location.reload();
     }
     if (favicon) {
      console.log(favicon);
@@ -20,7 +19,6 @@ window.onload = function() {
      console.log(title);
      document.title = title
     }
-    location.reload()
 
  
  }
