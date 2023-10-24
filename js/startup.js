@@ -17,6 +17,7 @@ window.onload = function() {
      console.log(title);
      document.title = title
     }
+    location.reload()
 
  
  }
