@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/changetitleandfavicon.js"></script>
         <script src="js/startup.js"></script>
+        <script src="js/search.js" defer></script>
     </head>
     <body class="root">
         <main>
@@ -22,16 +23,17 @@
             <h1>ㅤ</h1>
             <div class="searchbar">
                 <label for="search" class="name">Search Games</label>
-                <input rel="search" id="searchInput" class="search"placeholder="Search">
+                <input rel="search" id="searchInput" class="search" placeholder="Search">
             </div>
             <h1>ㅤ</h1>
-            <div class="container">
-                <div class="box">1</div>
-                <div class="box">2</div>
-                <div class="box">3</div>
+            <div class="container" id="gameList">
+                <div class="box"><a href="load.html?source=games/youarejeffbezos/index.html"><img src="imgs/icons/Drive.png"></a><h2 class="title">You Are Jeff Bezos</h2></div>
+                <div class="box"><a href="load.html?source=games/fleeingthecomplex/index.html"><img src="imgs/favicon.png"></a><h2 class="title">test</h2></div>
+                <div class="box"><a href="load.html?source=games/cookie clicker/index.html"><img src="imgs/icons/Google.png"></a><h2 class="title">test</h2></div>
                 <div class="box">4</div>
                 <div class="box">5</div>
                 <div class="box">6</div>
+                <script src="js/load.js"></script>
             </div>
         </main>
     </body>

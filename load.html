@@ -1,0 +1,45 @@
+<!-- new era document 1-->
+
+<!DOCTYPE html>
+
+<html>
+    <head id="gomanager">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Plasm - Grin</title>
+        <link rel="icon" href="imgs/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/changetitleandfavicon.js"></script>
+        <script src="js/startup.js"></script>
+    </head>
+    <body class="root">
+        <main>
+            <div id="navbar">
+                <script src="js/main.js"></script>
+            </div>
+            <h1>ㅤ</h1>
+            <h1>ㅤ</h1>
+            <iframe style="width: 960px; height: 500px;"id="myIframe" src="default.html"></iframe>
+                <script>
+                    // ion know what this means but thanks chat gpt
+                    // Function to get URL parameters
+                    function getUrlParameter(name) {
+                        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+                        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+                        var results = regex.exec(location.search);
+                        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+                    }
+
+                    // Get the 'source' parameter from the URL
+                    var sourceParam = getUrlParameter('source');
+
+                    // If the 'source' parameter is provided, change the iframe source
+                    if (sourceParam) {
+                        var iframe = document.getElementById("myIframe");
+                        iframe.src = sourceParam;
+                    }
+                </script>
+        </main>
+    </body>
+</html>

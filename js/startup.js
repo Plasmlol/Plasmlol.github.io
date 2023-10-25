@@ -9,6 +9,8 @@ window.onload = function() {
     if (theme) {
         console.log(theme)
         document.body.classList.replace("root", theme)
+    } else {
+        document.body.classList.replace("root", "normal-accent")
     }
     if (favicon) {
      console.log(favicon);
