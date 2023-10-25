@@ -9,7 +9,7 @@
         <title>Plasm - Grin</title>
         <link rel="icon" href="imgs/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/load.css">
         <script src="js/changetitleandfavicon.js"></script>
         <script src="js/startup.js"></script>
     </head>
@@ -19,27 +19,30 @@
                 <script src="js/main.js"></script>
             </div>
             <h1>ㅤ</h1>
-            <h1>ㅤ</h1>
-            <iframe style="width: 960px; height: 500px;"id="myIframe" src="default.html"></iframe>
-                <script>
-                    // ion know what this means but thanks chat gpt
-                    // Function to get URL parameters
-                    function getUrlParameter(name) {
-                        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-                        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-                        var results = regex.exec(location.search);
-                        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-                    }
+            
+            <iframe class="gameframe" id="myIframe" src="default.html"></iframe>
 
-                    // Get the 'source' parameter from the URL
-                    var sourceParam = getUrlParameter('source');
+            <script>
+                var gametag = window.location.search;
+                var iframe = document.getElementById("myIframe")
+                if (gametag === '?game=cookieclicker') {
+                    const iframe = document.getElementById("myIframe")
+                    iframe.src = "games/cookie clicker/index.html"
+                    console.log(gametag)
+                }
+                if (gametag === '?game=jeffbezosiszaddy') {
+                    const iframe = document.getElementById("myIframe")
+                    iframe.src = "games/youarejeffbezos/index.html"
+                    console.log(gametag)
+                }
 
-                    // If the 'source' parameter is provided, change the iframe source
-                    if (sourceParam) {
-                        var iframe = document.getElementById("myIframe");
-                        iframe.src = sourceParam;
-                    }
-                </script>
-        </main>
+                if (gametag === '?game=fleeingthecomplex') {
+                    const iframe = document.getElementById("myIframe")
+                    iframe.src = "games/fleeingthecomplex/index.html"
+                    console.log(gametag)
+                }
+                
+            </script>
+               
     </body>
 </html>

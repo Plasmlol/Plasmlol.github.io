@@ -179,7 +179,13 @@ body {
     border: 0px;
  }
 
-
+ html,body,main {
+    height: 100%;
+ }
+ .gameframe {
+    width: 75%;
+    height: 75%
+ }
 
  .settingsbuttons {
     display: flex;
