@@ -3,6 +3,12 @@
     src: url(LEMONMILK.otf);
 }
 
+@font-face {
+    font-family: Lightt;
+    src: url(LEMONMILK-Light.otf);
+}
+
+
 
 :root {
     --primary-color: rgb(70, 70, 70);
@@ -39,6 +45,10 @@ body {
     background-color: rgb(70, 70, 70);
 }
 
+.biggercontainer {
+    background-color: rgb(70, 70, 70);
+}
+
 
 
 .navcontainer {
@@ -48,8 +58,9 @@ body {
     padding: 0;
     margin: 0;
     list-style: none;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
     background-color: rgb(54, 54, 54);
+    
 }
 
 
@@ -57,16 +68,20 @@ body {
     position: absolute;
     top: 0;
     width: 100%;
+    flex-wrap: wrap;
     left: 0;
     padding: 0;
     margin: 0;
 }
 
+
+
 .navcontainer li{
     position: relative;
+    display: flex;
     top: 20px;
     padding: 0;
-    margin-right: -6;
+    
 
 }
 
@@ -183,12 +198,59 @@ body {
     height: 100%;
  }
  .gameframe {
+    border: solid 3px var(--accent-color);
+    border-radius: 10px;
     width: 75%;
-    height: 75%
+    height: 80%;
  }
 
  .settingsbuttons {
     display: flex;
 
  }
+
+ .containerdesc {
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: cetner;
+    width: 24%;
+    height: 50%;
+    flex-wrap: wrap;
+    gap: .25rem;
+ }
+
+ .a {
+    font-size: 30px;
+    border: solid 3px var(--accent-color);
+    font-family: Lemonmilk;
+    color: var(--accent-color);
+    border-radius: 10px;
+    height: 50%;
+    width: 110%;
+ }
+
+ .b {
+    font-size: 30px;
+    font-family: Lemonmilk;
+    
+    color: var(--accent-color);
+    border-radius: 10px;
+    height: 50%;
+    width: 100%;
+    border: solid 3px var(--accent-color);
+
+ }
+
+ .fullscreen {
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    bottom: -20%;
+    width: 21%;
+    height: 20%;
+    
+ }
+
+ 
 

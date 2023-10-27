@@ -42,24 +42,28 @@ body {
 
 
 .navcontainer {
-    display: flex;
-    gap: 1rem;
-    top: 0;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    flex-wrap:wrap;
+    background-color: rgb(54, 54, 54);
+}
+
+.navcontainer {
     background-color: rgb(54, 54, 54);
 }
 
 
+
 .navcontainer {
+    display: flex;
+    background-color: transparent;
+    gap: 1rem;
+    list-style: none;
     position: absolute;
     top: 0;
+    flex-wrap: nowrap;
     width: 100%;
     left: 0;
     padding: 0;
     margin: 0;
+    background-color: rgb(54, 54, 54);
 }
 
 .navcontainer li{
@@ -97,7 +101,7 @@ body {
     width: 150px;
     height: auto;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 20px; 
     transition-duration: 0.4s;
     border: 2px solid var(--accent-color);
     color: var(--accent-color);
@@ -134,7 +138,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 250px);
+    grid-template-columns: repeat(auto-fit, 100px);
     justify-content: space-evenly;
     justify-items: center;
     align-content: space-evenly;
@@ -148,8 +152,8 @@ body {
     font-size: 3rem;
     color: #fff;
     box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     border-radius: 4px;
     transition: all 500ms;
     overflow:hidden;
@@ -185,4 +189,33 @@ body {
     display: flex;
 
  }
+
+
+
+ 
+
+ .searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .search {
+    width: 25%;
+    height: 25%;
+    background-color: rgb(97, 97, 97);
+    border-radius: 5px;
+    border: solid 3px rgb(78, 78, 78);
+ }
+
+ .search {
+    height: 30px;
+ }
+
+ .search::placeholder {
+    font-family: Lemonmilk;
+    color: rgb(68, 68, 68);
+    font-size: 15px;
+    text-align: center;
+}
 

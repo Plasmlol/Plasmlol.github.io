@@ -19,30 +19,13 @@
                 <script src="js/main.js"></script>
             </div>
             <h1>ㅤ</h1>
-            
             <iframe class="gameframe" id="myIframe" src="default.html"></iframe>
-
-            <script>
-                var gametag = window.location.search;
-                var iframe = document.getElementById("myIframe")
-                if (gametag === '?game=cookieclicker') {
-                    const iframe = document.getElementById("myIframe")
-                    iframe.src = "games/cookie clicker/index.html"
-                    console.log(gametag)
-                }
-                if (gametag === '?game=jeffbezosiszaddy') {
-                    const iframe = document.getElementById("myIframe")
-                    iframe.src = "games/youarejeffbezos/index.html"
-                    console.log(gametag)
-                }
-
-                if (gametag === '?game=fleeingthecomplex') {
-                    const iframe = document.getElementById("myIframe")
-                    iframe.src = "games/fleeingthecomplex/index.html"
-                    console.log(gametag)
-                }
-                
-            </script>
+        <div class="containerdesc">
+            <div id="a" class="a"></h1></div>
+            <div id="b"class="b">test</h1></div>
+            <img style="cursor: pointer;" onclick="document.querySelector('iframe').requestFullscreen()" class="fullscreen" src="imgs/Fullscreen.png">
+        </div>
+            <script src="js/loadgame.js"></script>
                
     </body>
 </html>
