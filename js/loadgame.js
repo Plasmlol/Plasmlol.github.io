@@ -21,7 +21,7 @@ iframe.src = "games/fleeingthecomplex/index.html"
 document.getElementById("text").innerHTML = "ok what the flip";
 }
 
-if (gametag === '?game=fleeingthecomplex') {
+if (gametag === '?game=gamesuggestion') {
 const iframe = document.getElementById("myIframe")
 iframe.src = "https://docs.google.com/forms/d/e/1FAIpQLSchrbawkZ2bWN8tb1lyYlC3Q31FgICqMzyFRiP7JNwsoEm9YA/viewform"
 document.getElementById("text").innerHTML = "What Games should I add to plasmV2";
