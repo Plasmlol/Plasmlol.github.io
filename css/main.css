@@ -145,7 +145,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     justify-content: space-evenly;
     justify-items: center;
     align-content: space-evenly;
