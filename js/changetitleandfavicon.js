@@ -58,6 +58,16 @@ function Googledocs() {
     
 }
 
+function Forms() {
+    favicon.setAttribute("href", "imgs/icons/forms.png");
+    localStorage.setItem("favicon", "imgs/icons/forms.png")
+    localStorage.setItem("title", "Google Forms");
+    document.title = localStorage.getItem("title");
+    
+}
+
+
+
 
 
 

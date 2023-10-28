@@ -10,11 +10,16 @@ function redaccent() {
             document.body.classList.add("lightmode")
             localStorage.setItem("theme", "red-accent")
         } else {
+            document.body.removeAttribute('class');
             document.body.classList.add("darkmode")
+            document.body.classList.add("red-accent")
+            localStorage.setItem("theme", "red-accent")
         }
 
     } else {
+        document.body.removeAttribute('class');
         document.body.classList.add("red-accent")
+        document.body.classList.add("darkmode")
         localStorage.setItem("theme", "red-accent")
     }
 
@@ -30,10 +35,15 @@ function normaltheme() {
             document.body.classList.add("lightmode")
             localStorage.setItem("theme", "normal-accent")
         } else {
+            document.body.removeAttribute('class');
             document.body.classList.add("darkmode")
+            document.body.classList.add("normal-accent")
+            localStorage.setItem("theme", "normal-accent")
         }
     } else {
+        document.body.removeAttribute('class');
         document.body.classList.add("normal-accent")
+        document.body.classList.add("darkmode")
         localStorage.setItem("theme", "normal-accent")
     }
 
@@ -49,7 +59,10 @@ function bluetheme() {
             document.body.classList.add("lightmode")
             localStorage.setItem("theme", "blue-accent")
         } else {
-
+            document.body.removeAttribute('class');
+            document.body.classList.add("darkmode")
+            document.body.classList.add("blue-accent")
+            localStorage.setItem("theme", "blue-accent")
         }
     } else {
         document.body.classList.add("blue-accent")
