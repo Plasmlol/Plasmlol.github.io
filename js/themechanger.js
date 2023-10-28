@@ -30,7 +30,7 @@ function normaltheme() {
             document.body.classList.add("lightmode")
             localStorage.setItem("theme", "normal-accent")
         } else {
-
+            document.body.classList.add("darkmode")
         }
     } else {
         document.body.classList.add("normal-accent")
