@@ -221,7 +221,7 @@ body {
 
  .search::placeholder {
     font-family: Lemonmilk;
-    color: var(--primary-color);
+    color: var(--accent-color);
     font-size: 15px;
     text-align: center;
 }
