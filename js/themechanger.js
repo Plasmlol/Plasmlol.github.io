@@ -72,19 +72,33 @@ function bluetheme() {
 }
 
 function light() {
+    if (localStorage.getItem('theme')) {
         localStorage.setItem("mode", "lightmode")
         document.body.removeAttribute('class')
         document.body.classList.add(localStorage.getItem('theme'))
         document.body.classList.add(localStorage.getItem('mode'))
         console.log(localStorage.getItem("mode"))
+    } else {
+        localStorage.setItem("mode", "lightmode")
+        document.body.removeAttribute('class')
+        document.body.classList.add("normal-accent")
+        document.body.classList.add(localStorage.getItem('mode'))
+    }
 }
 
 function dark() {
+    if (localStorage.getItem('theme')) {
         localStorage.setItem("mode", "darkmode")
         document.body.removeAttribute('class')
         document.body.classList.add(localStorage.getItem('theme'))
         document.body.classList.add(localStorage.getItem('mode'))
         console.log(localStorage.getItem("mode"))
+    } else {
+        localStorage.setItem("mode", "darkmode")
+        document.body.removeAttribute('class')
+        document.body.classList.add("normal-accent")
+        document.body.classList.add(localStorage.getItem('mode'))
+    }
 
 }
 

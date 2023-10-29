@@ -63,7 +63,7 @@ body {
     background-color: transparent;
     gap: 1rem;
     list-style: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     flex-wrap: nowrap;
     width: 100%;
