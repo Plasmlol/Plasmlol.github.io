@@ -95,15 +95,91 @@ if (game === 'worldshardestgame') {
     const iframe = document.getElementById("myIframe")
     iframe.src = "games/worlds-hardest-game/index.html"
     iframe.style ="background-color: white;"
-    document.getElementById("text").innerHTML = "What Games should I add to plasmV2";
+    document.getElementById("a").innerHTML = "Easier than you think";
+    document.getElementById("b").innerHTML = "Controls: <br> W A S D";
 }
 
 if (game === 'worldshardestgame2') {
     const iframe = document.getElementById("myIframe")
     iframe.src = "games/worlds-hardest-game-2/index.html"
     iframe.style ="background-color: white;"
-    document.getElementById("text").innerHTML = "What Games should I add to plasmV2";
+    document.getElementById("a").innerHTML = "Easier than you think 2.0";
+    document.getElementById("b").innerHTML = "Controls: <br> W A S D";
 }
+
+if (game === 'subwaysurfers') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/subway-surfers/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "Shouldnt the cop be skinny by now";
+    document.getElementById("b").innerHTML = "Controls: <br> W A S D/Arrow Keys";
+}
+
+if (game === 'minecraft') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/Minecraft/Offline_Download_Version.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "What an orginal game";
+    document.getElementById("b").innerHTML = "Controls: <br> Go to settings smh";
+}
+
+if (game === 'basketballstars') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/basketball-stars/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "What an orginal game";
+    document.getElementById("b").innerHTML = "Controls: <br> Go to settings smh";
+}
+
+if (game === 'gd') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/geometrydash/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "Jump over spikes + I aint paying for allat";
+    document.getElementById("b").innerHTML = "Controls: <br> Click/Space";
+}
+
+if (game === 'justfall') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/justfall/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "Fun Fact The Creators Of 1v1.LOL Made This Game";
+    document.getElementById("b").innerHTML = "Controls: <br> Ive never played this game 💀";
+}
+
+if (game === 'csgoclicker') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/csgo-clicker/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "This game is fun until  you realise all you do is click";
+    document.getElementById("b").innerHTML = "Controls: <br> Click lil bro 💀";
+}
+
+if (game === 'gunmayhem') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/gun-mayhem/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "This game is fun trust me";
+    document.getElementById("b").innerHTML = "Controls: <br> I forgor 💀";
+}
+
+if (game === 'gunmayhem2') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/gun-mayhem-2/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "This game is fun trust me (second game)";
+    document.getElementById("b").innerHTML = "Controls: <br> I forgor 💀";
+}
+
+if (game === 'gunmayhemredux') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/gun-mayhem-redux/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "This game is fun trust me (third game)";
+    document.getElementById("b").innerHTML = "Controls: <br> I forgor 💀";
+}
+ 
+ 
  
  
                 
