@@ -18,8 +18,7 @@ window.onload = function() {
             document.body.classList.add(mode)
         } else {
             document.body.removeAttribute('class')
-            document.body.classList.replace("root", "normal-accent")
-            document.body.classList.add('normal-accent')
+            document.body.classList.add(theme)
             document.body.classList.add('darkmode')
         }
     } else {
@@ -33,6 +32,7 @@ window.onload = function() {
             document.body.classList.add("darkmode")
         }
     }
+    
     if (favicon) {
      console.log(favicon);
     } else {
