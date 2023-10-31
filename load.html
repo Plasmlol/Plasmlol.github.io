@@ -27,15 +27,6 @@
         <script src="js/panic.js"></script>
         <link rel="stylesheet" href="css/loader.css">
     </head>
-    <div class="loader-wrapper">
-        <span class="loader"></span>
-    </div>
-
-    <script>
-        $(window).on("load",function(){
-            $(".loader-wrapper").delay("slow").fadeOut("slow");
-        });
-    </script>
     <body class="root">
         <main>
             <div id="navbar">
@@ -49,5 +40,14 @@
             <img style="cursor: pointer;" onclick="document.getElementById('myIframe').requestFullscreen()" class="fullscreen" src="imgs/Fullscreen.png">
         </div>
         <script src="js/loadgame.js"></script>
+        <div class="loader-wrapper">
+            <span class="loader"></span>
+        </div>
+    
+        <script>
+            $(window).on("load",function(){
+                $(".loader-wrapper").delay("slow").fadeOut("slow");
+            });
+        </script>
     </body>
 </html>

@@ -4,100 +4,126 @@ function redaccent() {
     if (document.body.classList.item =! null) {
         var current = document.body.getAttribute("class")
         console.log(current)
-        if (localStorage.getItem('mode') === 'lightmode') {
+        if (localStorage.getItem('themee') === 'lighttheme') {
             document.body.removeAttribute('class');
             document.body.classList.add("red-accent")
-            document.body.classList.add("lightmode")
-            localStorage.setItem("theme", "red-accent")
+            document.body.classList.add("lighttheme")
+            localStorage.setItem("accent", "red-accent")
         } else {
             document.body.removeAttribute('class');
-            document.body.classList.add("darkmode")
+            document.body.classList.add("darktheme")
             document.body.classList.add("red-accent")
-            localStorage.setItem("theme", "red-accent")
+            localStorage.setItem("accent", "red-accent")
         }
 
     } else {
         document.body.removeAttribute('class');
         document.body.classList.add("red-accent")
-        document.body.classList.add("darkmode")
-        localStorage.setItem("theme", "red-accent")
+        document.body.classList.add("darktheme")
+        localStorage.setItem("accent", "red-accent")
     }
 
 }
 
-function normaltheme() {
+function normalaccent() {
     if (document.body.classList.item =! null) {
         var current = document.body.getAttribute("class")
         console.log(current)
-        if (localStorage.getItem('mode') === 'lightmode') {
+        if (localStorage.getItem('themee') === 'lighttheme') {
             document.body.removeAttribute('class');
             document.body.classList.add("normal-accent")
-            document.body.classList.add("lightmode")
-            localStorage.setItem("theme", "normal-accent")
+            document.body.classList.add("lighttheme")
+            localStorage.setItem("accent", "normal-accent")
         } else {
             document.body.removeAttribute('class');
-            document.body.classList.add("darkmode")
+            document.body.classList.add("darktheme")
             document.body.classList.add("normal-accent")
-            localStorage.setItem("theme", "normal-accent")
+            localStorage.setItem("accent", "normal-accent")
         }
     } else {
         document.body.removeAttribute('class');
         document.body.classList.add("normal-accent")
-        document.body.classList.add("darkmode")
-        localStorage.setItem("theme", "normal-accent")
+        document.body.classList.add("darktheme")
+        localStorage.setItem("accent", "normal-accent")
     }
 
 }
 
-function bluetheme() {
+function blueaccent() {
     if (document.body.classList.item =! null) {
         var current = document.body.getAttribute("class")
         console.log(current)
-        if (localStorage.getItem('mode') === 'lightmode') {
+        if (localStorage.getItem('themee') === 'lighttheme') {
             document.body.removeAttribute('class');
             document.body.classList.add("blue-accent")
-            document.body.classList.add("lightmode")
-            localStorage.setItem("theme", "blue-accent")
+            document.body.classList.add("lighttheme")
+            localStorage.setItem("accent", "blue-accent")
         } else {
             document.body.removeAttribute('class');
-            document.body.classList.add("darkmode")
+            document.body.classList.add("darktheme")
             document.body.classList.add("blue-accent")
-            localStorage.setItem("theme", "blue-accent")
+            localStorage.setItem("accent", "blue-accent")
         }
     } else {
+        document.body.removeAttribute('class');
         document.body.classList.add("blue-accent")
-        localStorage.setItem("theme", "blue-accent")
+        document.body.classList.add("darktheme")
+        localStorage.setItem("accent", "blue-accent")
+    }
+
+}
+
+function yellowaccent() {
+    if (document.body.classList.item =! null) {
+        var current = document.body.getAttribute("class")
+        console.log(current)
+        if (localStorage.getItem('themee') === 'lighttheme') {
+            document.body.removeAttribute('class');
+            document.body.classList.add("yellow-accent")
+            document.body.classList.add("lighttheme")
+            localStorage.setItem("accent", "yellow-accent")
+        } else {
+            document.body.removeAttribute('class');
+            document.body.classList.add("darktheme")
+            document.body.classList.add("yellow-accent")
+            localStorage.setItem("accent", "yellow-accent")
+        }
+    } else {
+        document.body.removeAttribute('class');
+        document.body.classList.add("yellow-accent")
+        document.body.classList.add("darktheme")
+        localStorage.setItem("accent", "yellow-accent")
     }
 
 }
 
 function light() {
-    if (localStorage.getItem('theme')) {
-        localStorage.setItem("mode", "lightmode")
+    if (localStorage.getItem('accent')) {
+        localStorage.setItem("themee", "lighttheme")
         document.body.removeAttribute('class')
-        document.body.classList.add(localStorage.getItem('theme'))
-        document.body.classList.add(localStorage.getItem('mode'))
+        document.body.classList.add(localStorage.getItem('accent'))
+        document.body.classList.add(localStorage.getItem('themee'))
         console.log(localStorage.getItem("mode"))
     } else {
-        localStorage.setItem("mode", "lightmode")
+        localStorage.setItem("themee", "lighttheme")
         document.body.removeAttribute('class')
         document.body.classList.add("normal-accent")
-        document.body.classList.add(localStorage.getItem('mode'))
+        document.body.classList.add(localStorage.getItem('themee'))
     }
 }
 
 function dark() {
-    if (localStorage.getItem('theme')) {
-        localStorage.setItem("mode", "darkmode")
+    if (localStorage.getItem('accent')) {
+        localStorage.setItem("themee", "darktheme")
         document.body.removeAttribute('class')
-        document.body.classList.add(localStorage.getItem('theme'))
-        document.body.classList.add(localStorage.getItem('mode'))
-        console.log(localStorage.getItem("mode"))
+        document.body.classList.add(localStorage.getItem('accent'))
+        document.body.classList.add(localStorage.getItem('themee'))
+        console.log(localStorage.getItem("themee"))
     } else {
-        localStorage.setItem("mode", "darkmode")
+        localStorage.setItem("themee", "darktheme")
         document.body.removeAttribute('class')
         document.body.classList.add("normal-accent")
-        document.body.classList.add(localStorage.getItem('mode'))
+        document.body.classList.add(localStorage.getItem('themee'))
     }
 
 }

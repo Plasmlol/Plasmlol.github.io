@@ -5,31 +5,31 @@ window.onload = function() {
     icon.href = localStorage.getItem("favicon");
     var favicon = localStorage.getItem("favicon");
     var title = localStorage.getItem("title")
-    var theme = localStorage.getItem("theme")
-    var mode = localStorage.getItem("mode")
-    console.log(theme)
-    console.log(mode)
-    if (theme) {
-        console.log(mode)
-        console.log(theme)
-        if (mode) {
+    var accent = localStorage.getItem("accent")
+    var themee = localStorage.getItem("themee")
+    console.log(accent)
+    console.log(themee)
+    if (accent) {
+        console.log(accent)
+        console.log(themee)
+        if (themee) {
             document.body.removeAttribute('class')
-            document.body.classList.add(theme)
-            document.body.classList.add(mode)
+            document.body.classList.add(accent)
+            document.body.classList.add(themee)
         } else {
             document.body.removeAttribute('class')
-            document.body.classList.add(theme)
-            document.body.classList.add('darkmode')
+            document.body.classList.add(accent)
+            document.body.classList.add('darktheme')
         }
     } else {
-        if (mode) {
+        if (themee) {
             document.body.removeAttribute('class')
             document.body.classList.add('normal-accent')
-            document.body.classList.add(mode)
+            document.body.classList.add(themee)
         } else {
             document.body.removeAttribute('class')
             document.body.classList.add('normal-accent')
-            document.body.classList.add("darkmode")
+            document.body.classList.add("darktheme")
         }
     }
     
