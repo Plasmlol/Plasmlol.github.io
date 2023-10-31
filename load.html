@@ -4,6 +4,7 @@
 
 <html>
     <head id="gomanager">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY88NBQ68"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
@@ -24,7 +25,17 @@
         <script src="js/changetitleandfavicon.js"></script>
         <script src="js/startup.js"></script>
         <script src="js/panic.js"></script>
+        <link rel="stylesheet" href="css/loader.css">
     </head>
+    <div class="loader-wrapper">
+        <span class="loader"></span>
+    </div>
+
+    <script>
+        $(window).on("load",function(){
+            $(".loader-wrapper").delay("slow").fadeOut("slow");
+        });
+    </script>
     <body class="root">
         <main>
             <div id="navbar">
@@ -37,7 +48,6 @@
             <div id="b"class="b">test</h1></div>
             <img style="cursor: pointer;" onclick="document.getElementById('myIframe').requestFullscreen()" class="fullscreen" src="imgs/Fullscreen.png">
         </div>
-            <script src="js/loadgame.js"></script>
-               
+        <script src="js/loadgame.js"></script>
     </body>
 </html>

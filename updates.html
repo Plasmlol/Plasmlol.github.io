@@ -4,6 +4,7 @@
 
 <html>
     <head id="gomanager">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY88NBQ68"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
@@ -24,6 +25,7 @@
         <script src="js/changetitleandfavicon.js"></script>
         <script src="js/startup.js"></script>
         <script src="js/panic.js"></script>
+        <link rel="stylesheet" href="css/loader.css">
     </head>
     <body class="root">
         <main>
@@ -35,6 +37,15 @@
                 <div class="thing"><a href="loadupdates.html?blog=updates"><button style="cursor: pointer;"><p1 style="font-size: 30px; font-family: Lemonmilk; color: var(--offset-color)">Update Logs </p1><br><p1 style=" font-family: Lemonmilk; font-size: 20px; color: var(--lighter-color)">Learn about new changes and new updates of my website!</p1></button></a></div>
                 <div class="thing"><a href="loadupdates.html?blog=whatdevice"><button style="cursor: pointer;"><p1 style="font-size: 30px; font-family: Lemonmilk; color: var(--offset-color);">What You Should Use To Play Games</p1><br><p1 style=" font-family: Lemonmilk; font-size: 20px; color: var(--lighter-color)">What Platforms Work For My Website</p1></button></a></div>
             </div>
+            <div class="loader-wrapper">
+                <span class="loader"></span>
+            </div>
+
+            <script>
+                $(window).on("load",function(){
+                    $(".loader-wrapper").fadeOut("slow");
+                });
+            </script>
         </main>
     </body>
 </html>
