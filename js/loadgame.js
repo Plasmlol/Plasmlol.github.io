@@ -178,6 +178,42 @@ if (game === 'gunmayhemredux') {
     document.getElementById("a").innerHTML = "This game is fun trust me (third game)";
     document.getElementById("b").innerHTML = "Controls: <br> I forgor 💀";
 }
+
+if (game === 'fnaf1') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/FNAF1-main/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "Shiver me timbers";
+    document.getElementById("b").innerHTML = "Controls: <br> Figure it out yourself lol";
+}
+
+if (game === 'fnaf2') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/FNAF2-main/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "The Second Fnaf Game";
+    document.getElementById("b").innerHTML = "Controls: <br> Figure it out yourself lol";
+}
+
+if (game === 'fnafucn') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/UCN-HTML5-main/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "The Ultimate Fnaf Game";
+    document.getElementById("b").innerHTML = "Controls: <br> Too Much To Compute :/";
+}
+
+if (game === 'blockpost') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/blockpost/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "A game kinda like pixel gun 3d";
+    document.getElementById("b").innerHTML = "Controls: <br> Move: Wasd <br>Shoot/Aim: M1/M2";
+}
+ 
+ 
+ 
+ 
  
  
  

@@ -59,6 +59,7 @@ body {
 
 .navcontainer {
     background-color: var(--secondary-color);
+    z-index: 2;
 }
 
 .navcontainer {
@@ -160,6 +161,7 @@ body {
     align-content: space-evenly;
     align-items: center;
     gap: 3rem;
+    z-index: 3;
 }
 
 .box {

@@ -66,6 +66,7 @@ body {
     list-style: none;
     flex-wrap:nowrap;
     background-color: var(--secondary-color);
+    z-index: 2;
     
 }
 
