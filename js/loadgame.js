@@ -210,6 +210,81 @@ if (game === 'blockpost') {
     document.getElementById("a").innerHTML = "A game kinda like pixel gun 3d";
     document.getElementById("b").innerHTML = "Controls: <br> Move: Wasd <br>Shoot/Aim: M1/M2";
 }
+
+if (game === 'retrobowl') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/retrobowl/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "A retro football game";
+    document.getElementById("b").innerHTML = "Controls: <br> Throw: M1 <br> Dodge: W/S";
+}
+
+if (game === 'monkeymart') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/monkeymart/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "Play As  monkey and make a successful business";
+    document.getElementById("b").innerHTML = "Controls: <br> Move: WASD";
+}
+
+if (game === 'moto1') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/motox3m/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "Do a flip";
+    document.getElementById("b").innerHTML = "Controls: <br> Move: A/D";
+}
+
+if (game === 'moto2') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/moto-x3m-2/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "Do a flip";
+    document.getElementById("b").innerHTML = "Controls: <br> Move: A/D";
+}
+
+if (game === 'freezeria') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/papas freezeria/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "Make different drinks and earn money";
+    document.getElementById("b").innerHTML = "Controls: Just click";
+}
+
+if (game === 'pizzeria') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/papas pizzeria/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "Make pizza to earn a living not the idea job";
+    document.getElementById("b").innerHTML = "Controls: Just click";
+}
+
+if (game === 'scooperia') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/papas scooperia/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "Scoop icecream and add topping to serve to customers";
+    document.getElementById("b").innerHTML = "Controls: Just click";
+}
+
+if (game === 'sushiria') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/papas sushiria/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "I cant trhink of a description";
+    document.getElementById("b").innerHTML = "Controls: Just click";
+}
+
+if (game === 'donuteria') {
+    const iframe = document.getElementById("myIframe")
+    iframe.src = "games/papas donuteria/index.html"
+    iframe.style ="background-color: white;"
+    document.getElementById("a").innerHTML = "I only played this like once";
+    document.getElementById("b").innerHTML = "Controls: Just click";
+}
+ 
+ 
+ 
  
  
  
